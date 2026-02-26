@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-02-26 12:00">
+    <shop>
+        <name>Товарный фид OKR Академия</name>
+        <company>OKR Академия</company>
+        <url>https://okr-academy.ru</url>
+        <currencies>
+            <currency id="RUB" rate="1"/>
+            <currency id="USD" rate="1"/>
+            <currency id="EUR" rate="1"/>
+        </currencies>
+        <offers>
+            <!-- Курс 1: Тест-драйв OKR -->
+            <offer id="1" available="true">
+                <name>Тест-драйв OKR: как вовлечь и синхронизировать команды для достижения стратегических целей.</name>
+                <url>https://okr-academy.ru/basic?utm_source=partners&amp;utm_medium=habr-career&amp;utm_campaign=partners_habr-career_okr_basic</url>
+                
+                <price>4900</price>
+                <oldprice>4900</oldprice>
+                <currencyId>RUB</currencyId>
+                
+                <specialization>Бизнес и менеджмент</specialization>
+                
+                <param name="Дата начала">По факту набора потока</param>
+                
+                <duration unit="day">1</duration>
+                
+                <skills>
+                    <skill id="1">OKR</skill>
+                    <skill id="2">Управление бизнес-процессами</skill>
+                    <skill id="3">Управление командами</skill>
+                    <skill id="4">Работа в команде</skill>
+                </skills>
+                
+                <description>Возможность на практике понять как работает OKR и оценить готовность к ее внедрению. Сертификат OKR Basic и/или OKR Practitioner.</description>
+                
+                <param name="Оплата в рассрочку">Нет</param>
+                <param name="Формат занятий">online</param>
+                <param name="Требуемая квалификация">Junior</param>
+                <param name="Получаемая квалификация">Junior</param>
+                <param name="Выдаётся сертификат">Да</param>
+                <param name="Помощь с трудоустройством">Нет</param>
+            </offer>
+
+            <!-- Курс 2: OKR мастер / OKR коуч -->
+            <offer id="2" available="true">
+                <name>OKR мастер / OKR коуч</name>
+                <url>https://okr-academy.ru/training4okrcoach?utm_source=partners&amp;utm_medium=habr-career&amp;utm_campaign=partners_habr-career_okr_basic</url>
+                
+                <price>54000</price>
+                <oldprice>54000</oldprice>
+                <currencyId>RUB</currencyId>
+                
+                <specialization>Бизнес и менеджмент</specialization>
+                
+                <param name="Дата начала">По факту набора потока</param>
+                
+                <duration unit="day">6</duration>
+                
+                <skills>
+                    <skill id="1">OKR</skill>
+                    <skill id="2">Управление бизнес-процессами</skill>
+                    <skill id="3">Управление командами</skill>
+                    <skill id="4">Бизнес-тренер</skill>
+                    <skill id="5">Бизнес-консультирование</skill>
+                    <skill id="6">Работа в команде</skill>
+                    <skill id="7">Фасилитация</skill>
+                    <skill id="8">SWOT</skill>
+                    <skill id="9">PEST-анализ</skill>
+                </skills>
+                
+                <description>Формирование практических навыков, необходимых для успешного внедрения и использования OKR в компании. Сертификат OKR Coach.</description>
+                
+                <param name="Оплата в рассрочку">Нет</param>
+                <param name="Формат занятий">online</param>
+                <param name="Требуемая квалификация">Middle</param>
+                <param name="Получаемая квалификация">Middle</param>
+                <param name="Выдаётся сертификат">Да</param>
+                <param name="Помощь с трудоустройством">Нет</param>
+            </offer>
+
+            <!-- Курс 3: Тест-драйв Бизнес-ТРИЗ -->
+            <offer id="3" available="true">
+                <name>Тест-драйв Бизнес-ТРИЗ: нестандартные решения для амбициозных целей</name>
+                <url>https://okr-academy.ru/triz_okr?utm_source=partners&amp;utm_medium=habr-career&amp;utm_campaign=partners_habr-career_okr_basic</url>
+                
+                <price>18000</price>
+                <oldprice>18000</oldprice>
+                <currencyId>RUB</currencyId>
+                
+                <specialization>Бизнес и менеджмент</specialization>
+                
+                <param name="Дата начала">По факту набора потока</param>
+                
+                <duration unit="day">2</duration>
+                
+                <skills>
+                    <skill id="1">Генерация идей</skill>
+                    <skill id="2">Создание креативных концепций</skill>
+                    <skill id="3">Работа в команде</skill>
+                </skills>
+                
+                <description>Практическое знакомство с инструментами Бизнес-ТРИЗ: за 8 часов вы проходите полный цикл решения бизнес-задачи на учебном кейсе, используя алгоритмы и инструменты Бизнес-ТРИЗ.</description>
+                
+                <param name="Оплата в рассрочку">Нет</param>
+                <param name="Формат занятий">online</param>
+                <param name="Требуемая квалификация">Junior</param>
+                <param name="Получаемая квалификация">Junior</param>
+                <param name="Выдаётся сертификат">Нет</param>
+                <param name="Помощь с трудоустройством">Нет</param>
+            </offer>
+        </offers>
+    </shop>
+</yml_catalog>
