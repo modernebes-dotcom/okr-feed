@@ -1,0 +1,18 @@
+title = "Project secret protection"
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Public Tilda form identifiers embedded in browser HTML"
+regexTarget = "match"
+regexes = ['''tilda-formskey''']
+
+[[rules]]
+id = "literal-local-credential"
+description = "Literal password or access credential"
+regex = '''(?i)(?:password|passwd|client[_-]?secret|secret[_-]?key|api[_-]?key|access[_-]?token|auth[_-]?token|bot[_-]?token)\b["']?\s*[:=]\s*["']([^"'\r\n]{8,})["']'''
+secretGroup = 1
+[[rules.allowlists]]
+description = "Explicit examples and environment-variable names"
+regexTarget = "secret"
+regexes = ['''(?i)^(?:test[-_]|dummy|example|placeholder|change[-_]?me|your[-_])''', '''^[A-Z][A-Z0-9_]{5,}$''']

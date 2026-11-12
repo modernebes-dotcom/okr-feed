@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+root="$(git rev-parse --show-toplevel)"
+python_bin="$(git config --get codex.python || printf python)"
+"$python_bin" "$root/.repo-security/check_secrets.py" --staged
+previous="$(git config --get codex.previousHooksPath || true)"
+if [ -n "$previous" ] && [ -x "$previous/pre-commit" ]; then "$previous/pre-commit" "$@"; fi
