@@ -5,6 +5,10 @@ from pathlib import Path
 def git(*args):
     return subprocess.check_output(['git',*args]).decode('utf-8',errors='replace').strip()
 
+def git_paths(*args):
+    data=subprocess.check_output(['git',*args])
+    return {name.decode('utf-8',errors='surrogateescape') for name in data.split(b'\0') if name}
+
 def forbidden(name):
     p=Path(name); parts=set(p.parts)
     if parts & {'.codex','.ssh','.aws','node_modules','.venv','venv','__pycache__','.pnpm-store','AppData'}:return True
@@ -29,10 +33,10 @@ def main():
             ranges.append(local if remote=='0'*40 else remote+'..'+local)
         if not ranges:return 0
         names=set()
-        for sha in shas:names.update(git('ls-tree','-r','--name-only',sha).splitlines())
+        for sha in shas:names.update(git_paths('ls-tree','-r','--name-only','-z',sha))
         args=['git','--log-opts',' '.join(ranges)]
     else:
-        names=set(git('diff','--cached','--name-only','--diff-filter=ACMR').splitlines())
+        names=git_paths('diff','--cached','--name-only','--diff-filter=ACMR','-z')
         args=['git','--pre-commit','--staged']
     bad=sorted(n for n in names if forbidden(n))
     if bad:
